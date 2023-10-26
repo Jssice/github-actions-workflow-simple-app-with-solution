@@ -1,11 +1,11 @@
 name: Build and Deploy to Azure
 
 env:
-  AZURE_CONTAINER_REGISTRY_NAME: "raygithubcicddemoacr"  # set this to the name of your Azure Container Registry
-  AZURE_CONTAINER_REGISTRY: "raygithubcicddemoacr.azurecr.io"
+  AZURE_CONTAINER_REGISTRY_NAME: "githubcicdmoacr"  # set this to the name of your Azure Container Registry
+  AZURE_CONTAINER_REGISTRY: "githubcicdmoacr.azurecr.io"
   CONTAINER_NAME: "hello-world"
-  RESOURCE_GROUP: "github-cicd-demo-rg"
-  CLUSTER_NAME: "raygithubdemok8scluster"
+  RESOURCE_GROUP: "github-action-demo-rg"
+  CLUSTER_NAME: "githubk8scluster"
   DEPLOYMENT_MANIFEST_PATH: "kubernetes"
 
 # Retrive below secrets from GitHub Actions Secrets
